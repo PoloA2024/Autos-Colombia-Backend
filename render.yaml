@@ -1,9 +1,8 @@
 services:
   - type: web
     name: autos-colombia-backend
+    env: docker
     branch: main
-    buildCommand: ./mvnw clean package
-    startCommand: java -jar target/*.jar
     rootDir: .
     envVars:
       - key: DATABASE_URL
