@@ -6,7 +6,6 @@ services:
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/*.jar
     rootDir: .
-    plan: free
     envVars:
       - key: DATABASE_URL
         value: jdbc:postgresql://dpg-d162daq4d50c73evsrq0-a:5432/parqueadero_6b73
