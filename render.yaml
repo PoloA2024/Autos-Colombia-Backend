@@ -1,7 +1,7 @@
 services:
   - type: web
     name: autos-colombia-backend
-    env: java
+    env: docker
     branch: main
     buildCommand: ./mvnw clean package
     startCommand: java -jar target/*.jar
