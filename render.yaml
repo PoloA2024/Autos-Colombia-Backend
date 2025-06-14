@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: autos-colombia-backend
+    runtime: java
+    buildCommand: ./mvnw clean package
+    startCommand: java -jar target/*.jar
+    envVars:
+      - key: SPRING_DATASOURCE_URL
+        value: jdbc:postgresql://dpg-d162daq4d50c73evsrq0-a:5432/parqueadero_6b73
+      - key: SPRING_DATASOURCE_USERNAME
+        value: parqueadero_6b73_user
+      - key: SPRING_DATASOURCE_PASSWORD
+        value: 6usFhwFDMrUAVRXwcM0WQdvx6W8gLurR
+      - key: SPRING_JPA_HIBERNATE_DDL_AUTO
+        value: update
+      - key: SPRING_JPA_SHOW_SQL
+        value: "true"
