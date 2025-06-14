@@ -1,9 +1,8 @@
 services:
   - type: web
     name: autos-colombia-backend
-    env: java
-    buildCommand: "./mvnw clean package"
-    startCommand: "java -jar target/parqueadero-0.0.1-SNAPSHOT.jar"
+    env: docker
+    plan: free
     envVars:
       - key: SPRING_DATASOURCE_URL
         value: jdbc:postgresql://dpg-d162daq4d50c73evsrq0-a:5432/parqueadero_6b73
